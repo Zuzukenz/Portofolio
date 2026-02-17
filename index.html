@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanif | Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+  <script>
+  function darkMode() {
+    document.body.classList.toggle("dark");
+}
+
+window.addEventListener("scroll", function() {
+    let elements = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < elements.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = elements[i].getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            elements[i].classList.add("active");
+        }
+    }
+});
+  </script>
+</head>
+<body>
+
+<nav>
+    <h2>FH</h2>
+    <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Halo, Saya Fathin Hanif</h1>
+    <p>Pelajar SMK | Leadership & Technology</p>
+</header>
+
+<section class="reveal" id="about">
+    <h2>Tentang Saya</h2>
+
+    <div class="profile-card">
+
+        <div class="profile-img">
+            <img src="foto.png" alt="Foto Profil">
+        </div>
+
+        <h3>Fathin Aznar Al Hanif</h3>
+        <p class="role">Pelajar SMK | Leadership & Technology</p>
+
+        <div class="bio">
+            <div><b>Status</b><span>Pelajar SMK</span></div>
+            <div><b>Jurusan</b><span>RPL</span></div>
+            <div><b>Minat</b><span>Organisasi</span></div>
+            <div><b>Domisili</b><span>Medan</span></div>
+          <div><b>Organisasi</b><span>Paskibra</span></div>
+        </div>
+
+        <p class="desc">
+            Saya memiliki ketertarikan pada teknologi dan pengembangan diri.
+            Saya percaya bahwa disiplin, konsistensi, dan kemauan belajar
+            adalah dasar untuk mencapai tujuan jangka panjang.
+        </p>
+
+    </div>
+</section>
+
+<section class="reveal" id="skills">
+    <h2>Keahlian</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Inisiator</div>
+        <div class="skill">Design</div>
+    </div>
+</section>
+
+<section class="reveal" id="projects">
+    <h2>Proyek</h2>
+    <div class="card">
+        <h3>Mini Calculator</h3>
+        <p>Aplikasi kalkulator sederhana berbasis web.</p>
+    </div>
+
+    <div class="card">
+        <h3>Website Latihan</h3>
+        <p>Website portofolio sederhana untuk pembelajaran.</p>
+    </div>
+</section>
+
+<section class="reveal" id="contact">
+    <h2>Kontak</h2>
+    <p>Email : fathin170410@gmail.com</p>
+    <p>Instagram : @hazznizz_only</p>
+</section>
+
+<footer>
+    <p>© 2026 Zuzukenz</p>
+</footer>
+
+<button class="toggle-dark" onclick="darkMode()">🌙</button>
+
+<script src="script.js"></script>
+</body>
+</html>
